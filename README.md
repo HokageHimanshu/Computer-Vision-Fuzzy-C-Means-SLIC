@@ -26,13 +26,15 @@ There are two tasks implemented in this exercise:
 
 ## :monocle_face: Results
 
-
+**First Part**<br><br>
 ![Fuzzy image](./Ans1.jpg)<br>
 
 * Ran the fuzzy cmeans algorithm with cluster size predefined (say 6) on the image to cluster the image on the basis of the colors.
 * The image was iterated and a dfs algorithm is used to find the size of the islands on the segmented image. Dfs algorithm also stores the boundary pixels to that connected component (color) in the boundary dictionary.
 * If the size of the island (of pixels) is smaller than the threshold then its color is replaced with the majority color in the boundary pixels using the boundary dictionary .
 
+
+**Second Part**<br><br>
 ![SLIC](./Ans2&3.jpg)
 
 * Performed slic on the image and obtained the superpixels.
